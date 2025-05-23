@@ -9,7 +9,7 @@ namespace LOrd_Card_Shop.Handler
 {
     public class LoginHandler 
     {
-        public static void LoginHandlers(
+        public static async void LoginHandlers(
             string username,
             string password,
             Label errLbl,
@@ -24,7 +24,7 @@ namespace LOrd_Card_Shop.Handler
             }
             else
             {
-                if (UserRepository.loginValidation(username, password) == true)
+                if (await UserRepository.loginValidation(username, password) == true)
                 {
                     User dbUserName = UserRepository.getUserByName(username);
                     Session["User"] = dbUserName.UserName;
@@ -33,7 +33,7 @@ namespace LOrd_Card_Shop.Handler
                     {
                         HttpCookie userCookie = new HttpCookie("user_cookie", dbUserName.UserName);
 
-                        userCookie.Expires = DateTime.Now.AddDays(1);
+                        userCookie.Expires = DateTime.Now.AddDays(7);
                         Response.Cookies.Add(userCookie);
                     }
                     Response.Redirect("Home.aspx");

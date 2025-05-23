@@ -1,4 +1,4 @@
-﻿<%@ Page Async="true" Title="" Language="C#" MasterPageFile="~/Master/Navbar.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="LOrd_Card_Shop.Views.Register" %>
+﻿<%@ Page Async="true" Title="" Language="C#" MasterPageFile="~/Master/Navbar.Master" AutoEventWireup="true" CodeBehind="Profile.aspx.cs" Inherits="LOrd_Card_Shop.Views.Profile" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
@@ -38,7 +38,7 @@
             font-size: smaller;
         }
 
-        #ContentPlaceHolder1_genderRBList tbody {
+        #ContentPlaceHolder1_genderRBList tbody{
             display: flex;
         }
     </style>
@@ -56,7 +56,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="login-container">
-        <h2>Login</h2>
+        <h2>Profile</h2>
 
         <asp:Label ID="uNameLbl" runat="server" Text="Username"></asp:Label><br />
         <asp:TextBox ID="uNameTb" runat="server"></asp:TextBox><br />
@@ -70,7 +70,7 @@
         <asp:Button ID="showPass" runat="server" Text="Show Password" OnClientClick="togglePassword(); return false;" /><br />
 
         <div style="display: flex; justify-content: center;">
-            <asp:RadioButtonList ID="genderRBList" runat="server" style="display: flex;">
+            <asp:RadioButtonList ID="genderRBList" runat="server" style="display: grid;">
                 <asp:ListItem Value="Male">Male</asp:ListItem>
                 <asp:ListItem Value="Female">Female</asp:ListItem>
             </asp:RadioButtonList>
@@ -83,12 +83,8 @@
         </div>
 
         <br />
-        <asp:Label ID="pwConfirmlbl" runat="server" Text="Confirm Password"></asp:Label><br />
-        <asp:TextBox ID="pwConfirmTb" runat="server" TextMode="Password"></asp:TextBox><br />
-
-        <br />
         <asp:Label ID="errLbl" runat="server" Text="" ForeColor="#DC1414" Visible="False"></asp:Label><br />
 
-        <asp:Button ID="registerBtn" runat="server" Text="Register New Account" Onclick="registerBtn_Click"/>
+        <asp:Button ID="updateBtn" runat="server" Text="Update Profile" onclick="updateBtn_Click"/>
     </div>
 </asp:Content>
