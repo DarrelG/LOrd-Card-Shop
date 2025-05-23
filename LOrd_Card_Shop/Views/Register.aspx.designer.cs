@@ -10,7 +10,6 @@
 namespace LOrd_Card_Shop.Views
 {
 
-
     public partial class Register
     {
 

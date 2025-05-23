@@ -23,7 +23,6 @@ namespace LOrd_Card_Shop.Views
                 }
             }
         }
-
         protected void loginBtn_Click(object sender, EventArgs e)
         {
             string username = uNameTb.Text;

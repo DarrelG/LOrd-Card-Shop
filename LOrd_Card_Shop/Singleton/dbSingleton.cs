@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Web;
 
 namespace LOrd_Card_Shop.Singleton
-{
+{ 
     public class dbSingleton
     {
         private static HttpCookie Cookie = HttpContext.Current.Request.Cookies["user_cookie"];

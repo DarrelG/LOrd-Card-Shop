@@ -18,7 +18,7 @@ namespace LOrd_Card_Shop.Handler
             HttpSessionState Session)
         {
             if (string.IsNullOrEmpty(username) && string.IsNullOrEmpty(password))
-            {
+            { 
                 errLbl.Text = "Username and Password must be filled!";
                 errLbl.Visible = true;
             }

@@ -13,7 +13,7 @@ using System.Web.UI.WebControls;
 
 namespace LOrd_Card_Shop.Repository
 {
-    public class UserRepository : dbSingleton
+    public class UserRepository : dbSingleton 
     {
         public static User getUserById(int user)
         {

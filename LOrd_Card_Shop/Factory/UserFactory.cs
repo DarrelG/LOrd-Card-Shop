@@ -18,6 +18,6 @@ namespace LOrd_Card_Shop.Factory
             user.UserDOB = DOB;
             user.UserRole = "customer";
             return user;
-        }
+        } 
     }
 }

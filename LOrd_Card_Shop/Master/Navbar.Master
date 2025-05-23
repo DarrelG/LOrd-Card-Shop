@@ -6,7 +6,7 @@
     <title>LOrd Card Shop</title>
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
 
-    <script>
+    <script> 
         function toggleProfileMenu() {
             var menu = document.getElementById("profileMenu");
             menu.classList.toggle("active");

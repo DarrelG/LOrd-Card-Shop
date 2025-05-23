@@ -19,7 +19,7 @@
                 margin: 8px 0;
                 border: 1px solid #ccc;
                 border-radius: 5px;
-            }
+            } 
 
             .login-container button {
                 background-color: #007bff;

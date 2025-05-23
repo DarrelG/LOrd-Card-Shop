@@ -24,7 +24,7 @@ namespace LOrd_Card_Shop.Master
                 {
                     GuestNavbar.Visible = false;
                     DefaultNavbar.Visible = true;
-                    UsernameLabel.Text = "Hello, " + Session["User"];
+                    UsernameLabel.Text = "Hello, " + Session["User"]; 
                 }
                 else
                 {

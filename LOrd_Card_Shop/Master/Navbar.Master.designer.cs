@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LOrd_Card_Shop.Master
+namespace LOrd_Card_Shop.Master 
 {
 
 

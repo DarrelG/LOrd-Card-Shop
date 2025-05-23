@@ -32,7 +32,7 @@ namespace LOrd_Card_Shop.Handler
                 DOB = DOB == null ? throw new Exception("Please fill your Birth of Date") : DOB;
                 bool usernames = string.IsNullOrEmpty(UserRepository.getUserByName(username).ToString()) ? false : throw new Exception("User Existed");
 
-                await UserRepository.createNewUser(username, password, email, gender, DOB);
+                await UserRepository.createNewUser(username, password, email, gender, DOB); 
             }
             catch (Exception ex) {
                 errLbl.Visible = true;

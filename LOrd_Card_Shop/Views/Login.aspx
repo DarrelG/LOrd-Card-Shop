@@ -9,7 +9,7 @@
             border: 2px solid #ccc;
             border-radius: 10px;
             background-color: #f9f9f9;
-            text-align: center;
+            text-align: center; 
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
         }
 
